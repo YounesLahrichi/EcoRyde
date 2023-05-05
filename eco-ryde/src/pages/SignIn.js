@@ -3,7 +3,8 @@ import {auth, provider} from "../Context/firebase";
 import {signInWithPopup} from "firebase/auth";
 import { UserAuth } from '../Context/AuthContext';
 import { useNavigate } from 'react-router';
-import NavBar from '../components/NavBar.JSX';
+import NavBarJSX from '../components/NavBar.jsx';
+
 
 function SignIn () {
   const {googleSignIn, user} = UserAuth();
@@ -24,7 +25,7 @@ function SignIn () {
 
   return (
     <div>
-      <NavBar/>
+        <NavBarJSX/>
       <button onClick={handleGoogleSignIn}>Sign in With Google</button>
     </div>
   );

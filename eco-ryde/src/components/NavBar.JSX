@@ -1,6 +1,6 @@
-import React, {useContext} from "react";
 import { Link } from "react-router-dom";
-import { UserAuth } from "../Pages/AuthContext";
+import { UserAuth } from "../Context/AuthContext";
+import React from "react";
 
 export default function NavBar(){
 
@@ -12,7 +12,6 @@ export default function NavBar(){
             console.log(error);
         }
     }
-
     return (
         <div>
             {user?.displayName ? "hi" : "nO"}
