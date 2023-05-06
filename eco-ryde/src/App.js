@@ -4,7 +4,6 @@ import Home from "./pages/Home"
 import NoPage from "./pages/NoPage"
 import Search from "./pages/Search"
 import SignIn from "./pages/SignIn"
-import './App.css';
 import { AuthContextProvider } from './Context/AuthContext';
 
 function App() {
