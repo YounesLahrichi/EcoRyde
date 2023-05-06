@@ -1,14 +1,13 @@
-import React, {useContext} from "react";
+import React from "react";
 import NavBarJSX from '../components/NavBar.jsx';
-import Footer from "../components/Footer.js"
-import AccountData from "../components/AccountData.jsx";
+import Footer from "../components/Footer.js";
 
-export default function Account() {
+export default function Host() {
     return (
         <div className="containerFill">
             <NavBarJSX className="headerFill"/>
             <div className="contentFill">
-                <AccountData/>
+                <h2>Host</h2>
             </div>
             <Footer className="footerFill"/>
         </div>
