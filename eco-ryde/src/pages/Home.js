@@ -5,18 +5,22 @@ import FactCard from "../components/FactCard.js";
 
 export default function Home() {
     return (
-        <div>
-            <NavBarJSX/>
-            <div>
-                <div>
-                    <h2>Home Page</h2>
-                </div>
-                <div className="home-card-container">
-                    <FactCard />
-                    <FactCard />
+        <div className="containerFill">
+            <NavBarJSX className="headerFill"/>
+            <div className="contentFill">
+            <div className="home-card-container">
+                    <FactCard 
+                    title = "What is EcoRyde?"
+                    filler = "FILLER WORDS HERE"/>
+                    <FactCard 
+                    title = "Why Choose EcoRyde?"
+                    filler = "FILLER WORDS HERE"/>
+                    <FactCard 
+                    title = "Sustainability Shit!"
+                    filler = "FILLER WORDS HERE"/>
                 </div>
             </div>
-            <Footer />
+            <Footer className="footerFill"/>
         </div>
     )
 }

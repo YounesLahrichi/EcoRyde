@@ -4,10 +4,12 @@ import Footer from "../components/Footer.js"
 
 export default function Account() {
     return (
-        <div>
-            <NavBarJSX/>
-            <h2>Account</h2>
-            <Footer/>
+        <div className="containerFill">
+            <NavBarJSX className="headerFill"/>
+            <div className="contentFill">
+                <h2>Account</h2>
+            </div>
+            <Footer className="footerFill"/>
         </div>
     )
 }

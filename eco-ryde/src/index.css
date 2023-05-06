@@ -16,6 +16,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
 }
 
 .container {
@@ -139,12 +140,27 @@ li{
   color: #fff;
 }
 
-/* ---------------------------- SEARCH.JS STYLES ---------------------------------- */
-.backgroundSearch{
-  background-color: #F9DEC9;
-  min-height: calc(100vh - 70px - 4rem);
+/* ---------------------------- ALLPAGE.JS STYLES ---------------------------------- */
+.containerFill{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
+.headerFill{
+  flex-shrink: 0;
+}
+
+.contentFill{
+  flex-grow: 1;
+  flex-basis: 0;
+  background-color: #F9DEC9;
+  height: 100%;
+}
+
+.footerFill{
+  flex-shrink: 0;
+}
 
 /* ---------------------------- APP.JS STYLES ---------------------------------- */
 
@@ -183,19 +199,14 @@ li{
 }
 
 .home-card {
-  flex: 0 0 250px;
-  background-color: white;
+  flex: 0 0 350px;
+  background-color: #2F4B26;
   margin: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
   transition: all 200ms ease-in-out;
-  cursor: pointer;
 }
 
-.home-card:hover {
-  transform: translateY(-1rem);
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4), 0 1px 6px rgba(0, 0, 0, 0.4);
-}
 
 .home-card p:first-child {
   padding-top: 1em;
@@ -204,6 +215,13 @@ li{
 .home-card p {
   line-height: 2;
   text-align: center;
+  color: white;
+}
+
+.home-card h1 {
+  line-height: 2;
+  text-align: center;
+  color: white;
 }
 
 .home-card p:last-child {
@@ -215,9 +233,7 @@ li{
 footer {
   color: white;
   background-color: #77bb3f;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+
 }
 
 .contact-info {

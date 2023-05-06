@@ -1,20 +1,14 @@
 import React from "react";
 
-export default function FactCard() {
+export default function FactCard(props) {
     return (
         <div className="home-card">
             <div className="notes-group-info">
+                <h1>
+                    {props.title}
+                </h1>
                 <p>
-                    Title
-                </p>
-                <p>
-                    Filler
-                </p>
-                <p>
-                    Filler
-                </p>
-                <p>
-                    Filler
+                    {props.filler}
                 </p>
             </div>
         </div>
