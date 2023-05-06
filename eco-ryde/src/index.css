@@ -174,6 +174,42 @@ li{
 }
 
 
+/* ------------------------------ HOME PAGE STYLES ----------------------------------- */
+.home-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 10vh;
+}
+
+.home-card {
+  flex: 0 0 250px;
+  background-color: white;
+  margin: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.home-card:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4), 0 1px 6px rgba(0, 0, 0, 0.4);
+}
+
+.home-card p:first-child {
+  padding-top: 1em;
+}
+
+.home-card p {
+  line-height: 2;
+  text-align: center;
+}
+
+.home-card p:last-child {
+  padding-bottom: 1em;
+}
+
 /* -------------------------------- FOOTER STYLES ----------------------------------------- */
 
 footer {
@@ -197,10 +233,6 @@ footer p {
   margin: 0;
   line-height: 1;
   padding: 0.5%;
-}
-
-.card p {
-  padding: 0.5rem 1rem;
 }
 
 
