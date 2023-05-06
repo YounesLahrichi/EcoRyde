@@ -6,7 +6,9 @@ export default function Search() {
     return (
         <div>
             <NavBarJSX/>
-            <h2>Search</h2>
+            <div className="backgroundSearch">
+                <h2>Search</h2>
+            </div>
             <Footer />
         </div>
     )
