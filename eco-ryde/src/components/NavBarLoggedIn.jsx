@@ -1,8 +1,9 @@
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import { UserAuth } from "../Context/AuthContext";
 import logo from "./logo.JPG"
 import logo1 from "./logo1.JPG"
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function NavBarLoggedIn(){
     const [active, setActive] = useState("nav_menu");
@@ -24,7 +25,12 @@ export default function NavBarLoggedIn(){
 
     return (
         <nav className='nav'>
-        <img href="home" classname = "brand" style={{ width: 200, height: 60 }} src={logo1}/>
+        <Link
+        style={{textDecoration: 'none'}}
+        to='/home'
+        >
+            <img href="home" classname = "brand" style={{ width: 200, height: 60 }} src={logo1}/>
+        </Link>
         <ul className={active}>
             <li className='nav_item'> <Link  className='nav_link' to="/search">Search for a Ride</Link></li>
             <li className='nav_item'> <Link className='nav_link' to="/host">Host a Ride</Link></li>

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import React from "react";
 import { useState } from "react";
 import AccountHost from "./AccountHost";
@@ -11,37 +11,37 @@ function AccountData (){
     const [hostDisplay, setHostDisplay] = useState(false);
     const [accountDisplay, setAccountDisplay] = useState(true);
 
-    const delay = ms => new Promise(
-        resolve => setTimeout(resolve, ms)
-      );
-
     return(
         <div className="pageData">
             <div className="accountNavDiv">
                 <ul className="accountNav">
-                    <li className='nav_item'> <Link 
+
+                    <button 
+                    className="meowButton2"
                     onClick={async() => {
                         setRideDisplay(true);
                         setAccountDisplay(false);
                         setHostDisplay(false);
                       }}
-                     className='nav_link' >My Rides</Link></li>
+                    >My Rides</button>
 
-                    <li className='nav_item'> <Link 
-                    onClick={async() => {
-                        setRideDisplay(false);
-                        setAccountDisplay(false);
-                        setHostDisplay(true);
-                      }}
-                    className='nav_link'>My Hosts</Link></li>
+                    <button 
+                        className="meowButton2"
+                        onClick={async() => {
+                            setRideDisplay(false);
+                            setAccountDisplay(false);
+                            setHostDisplay(true);
+                        }}
+                    >My Hosts</button>
 
-                    <li className='nav_item'> <Link 
-                    onClick={async() => {
-                        setRideDisplay(false);
-                        setAccountDisplay(true);
-                        setHostDisplay(false);
-                      }}
-                    className='nav_link'>Account Details</Link></li>
+                    <button 
+                        className="meowButton2"
+                        onClick={async() => {
+                            setRideDisplay(false);
+                            setAccountDisplay(true);
+                            setHostDisplay(false);
+                        }}
+                    >Account Details</button>
                 </ul>
             </div>
             

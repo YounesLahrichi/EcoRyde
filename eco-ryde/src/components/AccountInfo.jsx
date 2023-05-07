@@ -16,8 +16,7 @@ function AccountInfo(){
                     <TextField color="success" margin="dense" id="outlined-basic" label="Update Phone Number" variant="outlined" />
                     <p>Address:</p>
                     <TextField color="success" margin="dense" id="outlined-basic" label="Update Address" variant="outlined" />
-                </div>
-                            
+                </div>       
                 <div className="accountUpdateButton">
                     <button className="meowButton">Update</button>
                 </div>
