@@ -17,7 +17,7 @@ function AccountData (){
 
     return(
         <div className="pageData">
-            <div>
+            <div className="accountNavDiv">
                 <ul className="accountNav">
                     <li className='nav_item'> <Link 
                     onClick={async() => {

@@ -275,7 +275,7 @@ footer p {
 .accountNav{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding-top: 5%;
   padding-bottom: 5%;
 }
@@ -288,9 +288,7 @@ footer p {
   display: flex;
   flex-direction: column;
   justify-content: left;
-  align-items: center;
-  z-index: 1;
-  box-shadow: 0 5px 50px #000000;
+  box-shadow: 0 5px 30px #000000;
 }
 
 .pageData{
@@ -298,11 +296,45 @@ footer p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 10%;
 }
 
 .accountInfoDisplay{
-  float: left;
-  justify-content: left;
+  display: flex;
   flex-direction: column;
+  justify-content: left;
   padding: 5%;
+}
+.accountInfoDisplay p{
+  padding: 1%;
+}
+.accountInfoDisplay input{
+  padding: 1%;
+  width: 100%;
+}
+
+.accountUpdateButton{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  padding-right: 5%;
+}
+
+form {
+  box-sizing: border-box;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: hsl(0, 0%, 100%);
+  border: 4px solid hsl(0, 0%, 90%);
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 1fr 1fr;
+}
+
+.headerCenter{
+  text-align: center;
+}
+
+.accountNavDiv{
+  width: 100%;
 }

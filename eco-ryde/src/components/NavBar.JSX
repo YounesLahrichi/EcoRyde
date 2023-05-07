@@ -7,6 +7,7 @@ import NavBarLoggedIn from "./NavBarLoggedIn";
 export default function NavBar(){
 
     const {user} = UserAuth()
+    console.log(user);
     return (
         <div>
             {user?.displayName ? <NavBarLoggedIn/> : <NavBarLoggedOut/>}
