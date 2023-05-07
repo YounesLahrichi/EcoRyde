@@ -19,11 +19,9 @@ function CourseCard(props) {
                 <p>
                     <em>Capacity Left:</em> {props.title}
                 </p>
-                <p>
-                <a href="mailto:email@ecoryde.uw.edu">
-                    <span className="material-icons">email(!) </span> email@ecoryde.uw.edu
-                </a>
-                </p>
+                <div className="requestButton">
+                    <button className = "woofButton" onClick={console.log("test")}>Request to Join</button>
+                </div>
             </div>
         </div>
     );

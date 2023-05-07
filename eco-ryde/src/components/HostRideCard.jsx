@@ -2,7 +2,6 @@ import React from "react";
 import TextField from '@mui/material/TextField';
 
 function HostRideCard(){
-
     return(
         <div className="pageData">
             <h1 className="hostHeader"> Host A Ride!</h1>
