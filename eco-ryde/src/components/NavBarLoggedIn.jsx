@@ -1,8 +1,9 @@
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import { UserAuth } from "../Context/AuthContext";
 import logo from "./logo.JPG"
 import logo1 from "./logo1.JPG"
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function NavBarLoggedIn(){
     const [active, setActive] = useState("nav_menu");

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import React from "react";
 import { useState } from "react";
 import AccountHost from "./AccountHost";
@@ -10,10 +10,6 @@ function AccountData (){
     const [rideDisplay, setRideDisplay] = useState(false);
     const [hostDisplay, setHostDisplay] = useState(false);
     const [accountDisplay, setAccountDisplay] = useState(true);
-
-    const delay = ms => new Promise(
-        resolve => setTimeout(resolve, ms)
-      );
 
     return(
         <div className="pageData">

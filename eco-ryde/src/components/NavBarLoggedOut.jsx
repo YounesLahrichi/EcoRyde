@@ -33,7 +33,14 @@ export default function NavBarLoggedOut(){
 
     return (
         <nav className='nav'>
-            <img href="home" classname = "brand" style={{ width: 200, height: 60 }} src={logo1}/>
+          <Link
+        style={{textDecoration: 'none'}}
+        to='/home'
+        >
+
+           <img href="home" classname = "brand" style={{ width: 200, height: 60 }} src={logo1}/>
+        </Link>
+           
             <ul className={active}>
                 <li className='nav_item'> <Link className='nav_link' to="/search">Search for a Ride</Link></li>
                 <li className='nav_item'> <Link className='nav_link' to="/host">Host a Ride</Link></li>

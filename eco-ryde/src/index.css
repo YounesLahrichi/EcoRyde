@@ -191,12 +191,6 @@ li{
 
 
 /* ------------------------------ HOME PAGE STYLES ----------------------------------- */
-.home-card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 10vh;
-}
 
 .fact-card {
   flex: 0 0 350px;
@@ -257,7 +251,7 @@ li{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 10vh;
+  margin: 4vh;
 }
 
 .searchIcon {
@@ -404,7 +398,7 @@ footer a {
   align-items: center;
   justify-content: space-evenly;
   padding-top: 5%;
-  padding-bottom: 5%;
+  padding-bottom: 2%;
 }
 
 .displayCard{
@@ -465,7 +459,10 @@ form {
 }
 
 .accountNavDiv{
-  width: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hostHeader{
@@ -558,6 +555,7 @@ form {
   flex-direction: row;
   justify-content: center;
   padding-bottom: 2%;
+  padding-right: 2%;
 }
 
 .woofButton{
@@ -575,4 +573,37 @@ form {
 .woofButton:hover {
   transform: translateY(-0.2rem);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4), 0 1px 6px rgba(0, 0, 0, 0.4);
+}
+
+.meowButton3{
+  background-color: #2F4B26;
+  color: #F9DEC9;
+  border: 2px solid #F9DEC9;
+  padding: 10%;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  text-align: center;
+  flex: none;
+  white-space: nowrap;;
+}
+
+.meowButton3:hover{
+  transform: scale(1.1);
+  transition: 0.1s ease-in;
+}
+
+.headerHome{
+  text-align: center;
+  padding-top: 5%;
+}
+
+.factCardHeader{
+  color: #ffffff;
+  padding: 1%;
+  text-align: center;
+}
+
+.factCardFiller{
+  padding: 1%;
 }
