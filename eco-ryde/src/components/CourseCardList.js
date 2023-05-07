@@ -17,7 +17,7 @@ function CourseCardList(props) {
     // });
 
 
-        const component = <CourseCard title={props.title} key={props.title} />;
+        const component = <CourseCard title={props.title} author={props.author} key={props.title} />;
 
 
     return <div className="search-card">{component}</div>;

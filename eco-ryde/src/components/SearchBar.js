@@ -10,7 +10,8 @@ function SearchBar({ placeholder, data }) {
     const searchWord = event.target.value;
     setWordEntered(searchWord);
     const newFilter = data.filter((value) => {
-      return value.title.toLowerCase().includes(searchWord.toLowerCase());
+      //return value.title.toLowerCase().includes(searchWord.toLowerCase());
+      return ((value.title.toLowerCase().includes(searchWord.toLowerCase()))||value.author.toLowerCase().includes(searchWord.toLowerCase())) 
     });
       setFilteredData(newFilter);
   };
@@ -45,7 +46,7 @@ function SearchBar({ placeholder, data }) {
         <div className="search-card-container">
           {filteredData.slice(0, 50).map((value, key) => {
             return (
-                <CourseCardList title={value.title} key={key} />
+                <CourseCardList title={value.title} author={value.author} key={key} />
             );
           })}
         </div>
