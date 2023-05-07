@@ -13,13 +13,13 @@ function AccountInfo(){
                     <p>Name: {user.displayName}</p>
                     <TextField color="success" margin="dense" id="outlined-basic" label="Update Name" variant="outlined" />
                     <p>Phone:</p>
-                    <TextField color="success" margin="dense" required id="outlined-basic" label="Update Phone Number" variant="outlined" />
+                    <TextField color="success" margin="dense" id="outlined-basic" label="Update Phone Number" variant="outlined" />
                     <p>Address:</p>
-                    <TextField color="success" margin="dense" required id="outlined-basic" label="Update Address" variant="outlined" />
+                    <TextField color="success" margin="dense" id="outlined-basic" label="Update Address" variant="outlined" />
                 </div>
                             
                 <div className="accountUpdateButton">
-                    <button>Update</button>
+                    <button className="meowButton">Update</button>
                 </div>
             </form>
         </div>

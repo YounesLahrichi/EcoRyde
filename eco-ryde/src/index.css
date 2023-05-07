@@ -355,6 +355,7 @@ footer p {
 
 
 /* -------------------------------- SEARCH RESULT CARDS ------------------------------ */
+
 .search-card-container {
   display: flex;
   flex-wrap: wrap;
@@ -477,6 +478,16 @@ form {
 
 }
 
-.meow{
-  
+.meowButton{
+  background-color: white;
+  color: black;
+  border: 2px solid #2F4B26;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 1%;
+}
+
+.meowButton:hover{
+  transform: scale(1.1);
+  transition: 0.1s ease-in;
 }

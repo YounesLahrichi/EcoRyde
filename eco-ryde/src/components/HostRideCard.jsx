@@ -15,7 +15,7 @@ function HostRideCard(){
                     <TextField color="success" margin="normal" required id="outlined-basic" label="Event Leave Time" variant="outlined" />
                     <TextField color="success" margin="normal" required id="outlined-basic" label="Capacity" variant="outlined" /> 
                     <div className="accountUpdateButton">
-                        <button>Update</button>
+                        <button className = "meowButton">Update</button>
                     </div>
                 </form>
             </div>
