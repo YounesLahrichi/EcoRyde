@@ -370,6 +370,12 @@ footer p {
   transition: all 200ms ease-in-out;
 }
 
+.search-card:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4), 0 1px 6px rgba(0, 0, 0, 0.4);
+}
+
+
 .search-card p {
   line-height: 2;
   text-align: center;
@@ -388,6 +394,10 @@ footer p {
 
 .search-card p:last-child {
   padding-bottom: 1em;
+}
+
+.search-group-info a {
+  color:aqua;
 }
 /* ---------------------------- AccountPage.JS STYLES ---------------------------------- */
 
