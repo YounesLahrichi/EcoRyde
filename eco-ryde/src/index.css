@@ -57,7 +57,7 @@ li{
   align-items: center;
   justify-content: space-around;
   height: 70px;
-  background-color: #77bb3f;
+  background-color: #2F4B26;
 }
 
 
@@ -91,7 +91,7 @@ li{
     width: 50%;
     height: 93vh;
     right: 0;
-    background: #77bb3f;
+    background: #2F4B26;
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 5%;
@@ -232,7 +232,7 @@ li{
 
 footer {
   color: white;
-  background-color: #77bb3f;
+  background-color: #2F4B26;
 
 }
 
@@ -284,7 +284,7 @@ footer p {
   border-radius: 45px;
   background-color: #ffffff;
   width: 60%;
-  height: 100%;
+  height: 70%;
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -307,10 +307,12 @@ footer p {
 }
 .accountInfoDisplay p{
   padding: 1%;
+  display: flex;
 }
 .accountInfoDisplay input{
   padding: 1%;
   width: 100%;
+  flex: 1;
 }
 
 .accountUpdateButton{
@@ -328,7 +330,7 @@ form {
   border: 4px solid hsl(0, 0%, 90%);
   display: flex;
   flex-direction: column;
-  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
 }
 
 .headerCenter{
@@ -337,4 +339,24 @@ form {
 
 .accountNavDiv{
   width: 100%;
+}
+
+.hostHeader{
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.inputPadding{
+  margin-bottom: 2%;
+}
+
+.inputStyle{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.meow{
+  
 }

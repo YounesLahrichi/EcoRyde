@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { UserAuth } from "../Context/AuthContext";
 import logo from "./logo.JPG"
+import logo1 from "./logo1.JPG"
 import { useState } from 'react';
 
 export default function NavBarLoggedIn(){
@@ -23,7 +24,7 @@ export default function NavBarLoggedIn(){
 
     return (
         <nav className='nav'>
-        <img href="home" classname = "brand" style={{ width: 200, height: 60 }} src={logo}/>
+        <img href="home" classname = "brand" style={{ width: 200, height: 60 }} src={logo1}/>
         <ul className={active}>
             <li className='nav_item'> <Link  className='nav_link' to="/search">Search for a Ride</Link></li>
             <li className='nav_item'> <Link className='nav_link' to="/host">Host a Ride</Link></li>

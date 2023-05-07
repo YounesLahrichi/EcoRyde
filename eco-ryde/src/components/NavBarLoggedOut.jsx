@@ -3,6 +3,7 @@ import { UserAuth } from '../Context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import logo from "./logo.JPG"
+import logo1 from "./logo1.JPG"
 
 export default function NavBarLoggedOut(){
     const {googleSignIn, user} = UserAuth();
@@ -32,7 +33,7 @@ export default function NavBarLoggedOut(){
 
     return (
         <nav className='nav'>
-            <img href="home" classname = "brand" style={{ width: 200, height: 60 }} src={logo}/>
+            <img href="home" classname = "brand" style={{ width: 200, height: 60 }} src={logo1}/>
             <ul className={active}>
                 <li className='nav_item'> <Link className='nav_link' to="/search">Search for a Ride</Link></li>
                 <li className='nav_item'> <Link className='nav_link' to="/host">Host a Ride</Link></li>

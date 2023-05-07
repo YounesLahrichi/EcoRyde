@@ -1,5 +1,6 @@
 import React from "react";
 import NavBarJSX from '../components/NavBar.jsx';
+import HostRideCard from "../components/HostRideCard.jsx";
 import Footer from "../components/Footer.js";
 
 export default function Host() {
@@ -7,7 +8,7 @@ export default function Host() {
         <div className="containerFill">
             <NavBarJSX className="headerFill"/>
             <div className="contentFill">
-                <h2>Host</h2>
+                <HostRideCard/>
             </div>
             <Footer className="footerFill"/>
         </div>
