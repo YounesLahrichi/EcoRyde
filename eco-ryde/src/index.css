@@ -335,6 +335,10 @@ footer p {
   padding: 0.5%;
 }
 
+footer a {
+  color: white;
+}
+
 
 /* ---------------------------- MEDIA QUERIES ---------------------------------- */
 
@@ -484,8 +488,4 @@ form {
   display: flex;
   flex-direction: row;
 
-}
-
-.meow{
-  
 }
