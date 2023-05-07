@@ -62,8 +62,9 @@ userRoutes.route("/user/:id").get(async function (req, response) {
 userRoutes.route("/user/add").post(async function (req, response) {
     try {
         let data = req.body;
-        await User.add({data});
-        response.send("");
+        const doc = User.doc(req.body.id);
+        await doc.set({data});
+        response.send("User Added");
     } catch(e) {
         console.log("An error occurred adding a User. " + e);
     }
