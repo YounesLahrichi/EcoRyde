@@ -5,16 +5,24 @@ function CourseCard(props) {
         <div className="test-box">
             <div className="search-group-info">
                 <p>
-                    <em>Title:</em> {props.title}
+                    <em>Event Name:</em> {props.title}
                 </p>
                 <p>
-                    <em>Subject:</em> {props.title}
+                    <em>Event Location:</em> {props.author}
                 </p>
                 <p>
-                    <em>Course:</em> {props.title}
+                    <em>Arrival Time:</em> {props.title}
                 </p>
                 <p>
-                    <em>Instructor:</em> {props.title}
+                    <em>Driver:</em> {props.title}
+                </p>
+                <p>
+                    <em>Capacity Left:</em> {props.title}
+                </p>
+                <p>
+                <a href="mailto:email@ecoryde.uw.edu">
+                    <span className="material-icons">email(!) </span> email@ecoryde.uw.edu
+                </a>
                 </p>
             </div>
         </div>
