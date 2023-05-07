@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import BookData from "../data.json"
+
 function AccountRide(){
 
     return (
