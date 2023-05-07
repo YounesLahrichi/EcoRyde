@@ -1,5 +1,5 @@
 import React from "react";
-
+import TextField from '@mui/material/TextField';
 
 function HostRideCard(){
 
@@ -8,39 +8,12 @@ function HostRideCard(){
             <h1 className="hostHeader"> Host A Ride!</h1>
             <div className="displayCard">
                 <form>
-                    <div className="accountInfoDisplay">
-                        <div className="inputStyle">
-                            <p>Event Name:</p>
-                            <input className="inputPadding" type="text" placeholder="Name of the Event..." />
-                        </div>
-
-                        <div className="inputStyle">
-                            <p>Event Address:</p>
-                            <input className="inputPadding" type="text" placeholder="Address of the Event..." />
-                        </div>
-
-                        <div className="inputStyle">
-                            <p>Arrive Time:</p>
-                            <input className="inputPadding" type="text" placeholder="Arrive to the Event by..." />
-                        </div>
-
-                        <div className="inputStyle">
-                            <p>Event Start:</p>
-                            <input className="inputPadding" type="text" placeholder="When does Event Start..." />
-                        </div>
-
-                        <div className="inputStyle">
-                            <p>Event Leave:</p>
-                            <input className="inputPadding" type="text" placeholder="When does Event End..." />
-                        </div>
-                        <div className="inputStyle">
-                            <p>Capacity: </p>
-                            <input className="inputPadding" type="text" placeholder="What is the Capacity for the ride..." />
-                        </div>
-
-
-                    </div>
-                                
+                    <TextField color="success" margin="normal" required id="outlined-basic" label="Event Name" variant="outlined" />
+                    <TextField color="success" margin="normal" required id="outlined-basic" label="Event Address" variant="outlined" />
+                    <TextField color="success" margin="normal" required id="outlined-basic" label="Event Arrive Time" variant="outlined" />
+                    <TextField color="success" margin="normal" required id="outlined-basic" label="Event Start Time" variant="outlined" />
+                    <TextField color="success" margin="normal" required id="outlined-basic" label="Event Leave Time" variant="outlined" />
+                    <TextField color="success" margin="normal" required id="outlined-basic" label="Capacity" variant="outlined" /> 
                     <div className="accountUpdateButton">
                         <button>Update</button>
                     </div>

@@ -1,5 +1,5 @@
 import { UserAuth } from "../Context/AuthContext";
-
+import TextField from '@mui/material/TextField';
 
 function AccountInfo(){
     const {user} = UserAuth()
@@ -11,11 +11,11 @@ function AccountInfo(){
                 <div className="accountInfoDisplay">
                     <p>Email: {user.email}</p>
                     <p>Name: {user.displayName}</p>
-                    <input type="text" placeholder="Update Your Name..." />
+                    <TextField color="success" margin="dense" id="outlined-basic" label="Update Name" variant="outlined" />
                     <p>Phone:</p>
-                    <input type="text" placeholder="Update Your Phone Number..."/>
+                    <TextField color="success" margin="dense" required id="outlined-basic" label="Update Phone Number" variant="outlined" />
                     <p>Address:</p>
-                    <input type="text" placeholder="Update Your Address..."/>
+                    <TextField color="success" margin="dense" required id="outlined-basic" label="Update Address" variant="outlined" />
                 </div>
                             
                 <div className="accountUpdateButton">
