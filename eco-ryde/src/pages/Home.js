@@ -8,7 +8,7 @@ export default function Home() {
         <div className="containerFill">
             <NavBarJSX className="headerFill"/>
             <div className="contentFill">
-            <div className="home-card-container">
+                <div className="home-card-container">
                     <FactCard 
                     title = "What is EcoRyde?"
                     filler = "FILLER WORDS HERE"/>

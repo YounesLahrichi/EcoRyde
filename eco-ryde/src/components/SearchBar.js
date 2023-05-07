@@ -1,79 +1,58 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import CourseCardList from "./CourseCardList";
 
-const SearchBar = () => {
-  const [searchInput, setSearchInput] = useState('');
-  const [filteredCountries, setFilteredCountries] = useState([]);
+function SearchBar({ placeholder, data }) {
 
-  const countries = [
-    { name: 'Belgium', continent: 'Europe' },
-    { name: 'India', continent: 'Asia' },
-    { name: 'Bolivia', continent: 'South America' },
-    { name: 'Ghana', continent: 'Africa' },
-    { name: 'Japan', continent: 'Asia' },
-    { name: 'Canada', continent: 'North America' },
-    { name: 'New Zealand', continent: 'Australasia' },
-    { name: 'Italy', continent: 'Europe' },
-    { name: 'South Africa', continent: 'Africa' },
-    { name: 'China', continent: 'Asia' },
-    { name: 'Paraguay', continent: 'South America' },
-    { name: 'USA', continent: 'North America' },
-    { name: 'France', continent: 'Europe' },
-    { name: 'Botswana', continent: 'Africa' },
-    { name: 'Spain', continent: 'Europe' },
-    { name: 'Senegal', continent: 'Africa' },
-    { name: 'Brazil', continent: 'South America' },
-    { name: 'Denmark', continent: 'Europe' },
-    { name: 'Mexico', continent: 'South America' },
-    { name: 'Australia', continent: 'Australasia' },
-    { name: 'Tanzania', continent: 'Africa' },
-    { name: 'Bangladesh', continent: 'Asia' },
-    { name: 'Portugal', continent: 'Europe' },
-    { name: 'Pakistan', continent: 'Asia' },
-  ];
+  const [filteredData, setFilteredData] = useState(data);
+  const [wordEntered, setWordEntered] = useState("");
 
-  const handleChange = (e) => {
-    setSearchInput(e.target.value);
+  const handleFilter = (event) => {
+    const searchWord = event.target.value;
+    setWordEntered(searchWord);
+    const newFilter = data.filter((value) => {
+      return value.title.toLowerCase().includes(searchWord.toLowerCase());
+    });
+      setFilteredData(newFilter);
+  };
 
-    const filtered = countries.filter((country) =>
-      country.name.toLowerCase().includes(e.target.value.toLowerCase())
-    );
-    setFilteredCountries(filtered);
+  const clearInput = () => {
+    setFilteredData([]);
+    setWordEntered("");
   };
 
   return (
-    <div>
-      <input
-        type="search"
-        placeholder="Search here"
-        onChange={handleChange}
-        value={searchInput}
-      />
+    <div className="search">
+      <div className="searchInputs">
+        <input
+          type="text"
+          placeholder={placeholder}
+          value={wordEntered}
+          onChange={handleFilter}
+        />
 
-      <table>
-        <thead>
-          <tr>
-            <th>Country</th>
-            <th>Continent</th>
-          </tr>
-        </thead>
-        <tbody>
-          {filteredCountries.length > 0
-            ? filteredCountries.map((country, index) => (
-                <tr key={index}>
-                  <td>{country.name}</td>
-                  <td>{country.continent}</td>
-                </tr>
-              ))
-            : countries.map((country, index) => (
-                <tr key={index}>
-                  <td>{country.name}</td>
-                  <td>{country.continent}</td>
-                </tr>
-              ))}
-        </tbody>
-      </table>
+        {/* <div className="searchIcon">
+          {filteredData.length === 0 ? (
+            <p>Search</p>
+          ) : (
+            <p>Close</p>
+          )}
+        </div> */}
+
+      </div>
+
+      {filteredData.length != 0 && (
+
+        <div className="search-card-container">
+          {filteredData.slice(0, 50).map((value, key) => {
+            return (
+                <CourseCardList title={value.title} key={key} />
+            );
+          })}
+        </div>
+      )}
+      
     </div>
   );
-};
+}
 
 export default SearchBar;
