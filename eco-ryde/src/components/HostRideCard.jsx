@@ -5,7 +5,7 @@ function HostRideCard(){
 
     return(
         <div className="pageData">
-            <h1 className="hostHeader"> Host A RIDE!</h1>
+            <h1 className="hostHeader"> Host A Ride!</h1>
             <div className="displayCard">
                 <form>
                     <div className="accountInfoDisplay">
