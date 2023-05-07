@@ -335,6 +335,10 @@ footer p {
   padding: 0.5%;
 }
 
+footer a {
+  color: white;
+}
+
 
 /* ---------------------------- MEDIA QUERIES ---------------------------------- */
 
@@ -369,12 +373,6 @@ footer p {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
   transition: all 200ms ease-in-out;
 }
-
-.search-card:hover {
-  transform: translateY(-1rem);
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4), 0 1px 6px rgba(0, 0, 0, 0.4);
-}
-
 
 .search-card p {
   line-height: 2;
@@ -495,6 +493,7 @@ form {
   margin-top: 1%;
   border-radius: 5px;
 }
+
 .meowButton:hover{
   transform: scale(1.1);
   transition: 0.1s ease-in;
@@ -552,4 +551,28 @@ form {
 .meowButton2:hover{
   transform: scale(1.1);
   transition: 0.1s ease-in;
+}
+
+.requestButton{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 2%;
+}
+
+.woofButton{
+  background-color: #F9DEC9;
+  color: black;
+  border: 2px solid #2F4B26;
+  padding: 3%;
+  padding-left: 6%;
+  padding-right: 6%;
+  cursor: pointer;
+  margin-top: 1%;
+  border-radius: 5px;
+}
+
+.woofButton:hover {
+  transform: translateY(-0.2rem);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4), 0 1px 6px rgba(0, 0, 0, 0.4);
 }
