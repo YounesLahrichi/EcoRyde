@@ -50,7 +50,7 @@ userRoutes.route("/user/:id").get(async function (req, response) {
         if(doc.exists){
             response.json(doc.data());
         } else {
-            console.log("user not found")
+            response.send("user not found")
         }
         //response.json(docRef.get().data());
     } catch (e) {
@@ -61,9 +61,9 @@ userRoutes.route("/user/:id").get(async function (req, response) {
 //add check if user is already added
 userRoutes.route("/user/add").post(async function (req, response) {
     try {
-        let data = req.body;
-        const doc = User.doc(req.body.id);
-        await doc.set({data});
+        //let data = req.body;
+        const doc = User.doc(req.body.uid);
+        await doc.set(req.body);
         response.send("User Added");
     } catch(e) {
         console.log("An error occurred adding a User. " + e);
@@ -72,17 +72,19 @@ userRoutes.route("/user/add").post(async function (req, response) {
 
 //
 //userRoutes.route("/user/update").
-userRoutes.route("/user/update/:id").patch(async function (req, response) {
-    var docRef = User.doc(req.params.id);
+userRoutes.route("/user/update").put(async function (req, response) {
+    //var docRef = User.doc(req.params.id);
     try {
-        const doc = await docRef.get();
+        //const doc = await docRef.get();
+        //console.log(req.body.id)
         let data = req.body;
-        if(doc.exists){
-            await User.doc(req.params.id).patch(data);
-            response.json(doc.data());
-        } else {
-            console.log("user not found")
-        }
+        const doc = User.doc(req.body.uid);
+        //const doc = await docRef.get();
+        //console.log()
+        //console.log();
+        //console.log()
+        await doc.update(data);
+        //response.json("User Updated");
         //await User.patch({data}); //cannot use email
         response.send("User Updated");
     } catch(e) {
