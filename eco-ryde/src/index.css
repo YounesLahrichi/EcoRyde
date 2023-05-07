@@ -247,7 +247,7 @@ li{
   font-size: 18px;
   padding: 15px;
   height: 30px;
-  width: 300px;
+  width: 400px;
   border-radius: 20px;
 }
 
@@ -374,27 +374,16 @@ footer a {
 
 .search-card p {
   line-height: 2;
-  text-align: center;
-  color: white;
-}
-
-.search-card h1 {
-  line-height: 2;
-  text-align: center;
+  text-align: left;
+  margin-left: 10px;
   color: white;
 }
 
 .search-card p:first-child {
-  padding-top: 1em;
+  padding-top: 0.6em;
 }
 
-.search-card p:last-child {
-  padding-bottom: 1em;
-}
 
-.search-group-info a {
-  color:aqua;
-}
 /* ---------------------------- AccountPage.JS STYLES ---------------------------------- */
 
 .accountNav{

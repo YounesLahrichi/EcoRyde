@@ -2,22 +2,22 @@ import React from "react";
 
 function CourseCard(props) {
     return (
-        <div className="test-box">
+        <div>
             <div className="search-group-info">
                 <p>
-                    <em>Event Name:</em> {props.title}
+                    <b>Event Name:</b> {props.title}
                 </p>
                 <p>
-                    <em>Event Location:</em> {props.author}
+                    <b>Event Location:</b> {props.author}
                 </p>
                 <p>
-                    <em>Arrival Time:</em> {props.title}
+                    <b>Arrival Time:</b> {props.title}
                 </p>
                 <p>
-                    <em>Driver:</em> {props.title}
+                    <b>Driver:</b> {props.title}
                 </p>
                 <p>
-                    <em>Capacity Left:</em> {props.title}
+                    <b>Capacity Left:</b> {props.title}
                 </p>
                 <div className="requestButton">
                     <button className = "woofButton" onClick={console.log("test")}>Request to Join</button>
