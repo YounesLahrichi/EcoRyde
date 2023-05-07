@@ -44,4 +44,24 @@ hostRoutes.route("/host/add").post(async function (req, response) {
     }
 });
 
+hostRoutes.route("/host/update").put(async function (req, response) {
+    //var docRef = User.doc(req.params.id);
+    try {
+        //const doc = await docRef.get();
+        //console.log(req.body.id)
+        let data = req.body;
+        const doc = Hosts.doc(req.body.uid);
+        //const doc = await docRef.get();
+        //console.log()
+        //console.log();
+        //console.log()
+        await doc.update(data);
+        //response.json("User Updated");
+        //await User.patch({data}); //cannot use email
+        response.send("Host Updated");
+    } catch(e) {
+        console.log("An error occurred updating a Host. " + e);
+    }
+});
+
 module.exports  = hostRoutes
